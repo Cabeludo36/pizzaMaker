@@ -1,0 +1,404 @@
+[gd_scene load_steps=21 format=3 uid="uid://b0qhlcvmiinxg"]
+
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_jkalm"]
+[ext_resource type="Script" path="res://scenes/Pasta.gd" id="1_lx2lu"]
+[ext_resource type="Texture2D" uid="uid://bnl48a5vjpr6y" path="res://imgs/italy.png" id="1_vdkux"]
+[ext_resource type="Script" path="res://scenes/TomatoSouce.gd" id="3_avb71"]
+[ext_resource type="Script" path="res://scenes/cheese.gd" id="4_3gd6k"]
+[ext_resource type="Script" path="res://scenes/mushroom.gd" id="5_3jar8"]
+[ext_resource type="Texture2D" uid="uid://7hfxw71wlgu8" path="res://imgs/cheese.png" id="5_vooi0"]
+[ext_resource type="Script" path="res://scenes/BtnTrash.gd" id="6_2phjo"]
+[ext_resource type="Texture2D" uid="uid://dej8dl4t323fm" path="res://imgs/tomato.png" id="6_dp4ac"]
+[ext_resource type="Script" path="res://scenes/olives.gd" id="6_te21x"]
+[ext_resource type="Texture2D" uid="uid://xo24xqpwor0j" path="res://imgs/mushroom.png" id="6_xkbo6"]
+[ext_resource type="Texture2D" uid="uid://dssqqto0wrnui" path="res://imgs/olive1.png" id="8_466qb"]
+[ext_resource type="Texture2D" uid="uid://dv40dex2ke5oq" path="res://imgs/salam.png" id="10_5mibm"]
+[ext_resource type="Texture2D" uid="uid://lp5m6nyava4o" path="res://imgs/olive2.png" id="10_bs7uf"]
+[ext_resource type="Script" path="res://scenes/salans.gd" id="10_ou7h0"]
+[ext_resource type="Texture2D" uid="uid://b85h4pdhjj085" path="res://imgs/trash.png" id="11_h2dqm"]
+[ext_resource type="Script" path="res://scenes/BtnSell.gd" id="17_mjj3y"]
+[ext_resource type="FontFile" uid="uid://cuhohyxipg77s" path="res://fonts/PoetsenOne-Regular.ttf" id="17_ncui0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l16bo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lucak"]
+bg_color = Color(0.679387, 0.254119, 0.864084, 1)
+border_color = Color(0.376471, 0, 0, 1)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_jkalm")
+
+[node name="flag" type="Sprite2D" parent="."]
+position = Vector2(739.045, 363)
+scale = Vector2(6.93596, 5.08899)
+texture = ExtResource("1_vdkux")
+
+[node name="Pasta" type="Node2D" parent="."]
+script = ExtResource("1_lx2lu")
+
+[node name="TomatoSouce" type="Node2D" parent="."]
+visible = false
+script = ExtResource("3_avb71")
+
+[node name="cheese" type="Node2D" parent="."]
+visible = false
+script = ExtResource("4_3gd6k")
+
+[node name="mushrooms" type="Node2D" parent="."]
+script = ExtResource("5_3jar8")
+
+[node name="mushroom" type="Sprite2D" parent="mushrooms"]
+position = Vector2(257, 434)
+scale = Vector2(2.9375, 3)
+texture = ExtResource("6_xkbo6")
+
+[node name="mushroom2" type="Sprite2D" parent="mushrooms"]
+position = Vector2(372, 487)
+scale = Vector2(2.9375, 3)
+texture = ExtResource("6_xkbo6")
+
+[node name="mushroom3" type="Sprite2D" parent="mushrooms"]
+position = Vector2(514, 469)
+scale = Vector2(2.9375, 3)
+texture = ExtResource("6_xkbo6")
+
+[node name="mushroom4" type="Sprite2D" parent="mushrooms"]
+position = Vector2(581, 337)
+scale = Vector2(2.9375, 3)
+texture = ExtResource("6_xkbo6")
+
+[node name="mushroom5" type="Sprite2D" parent="mushrooms"]
+position = Vector2(543, 186)
+scale = Vector2(2.9375, 3)
+texture = ExtResource("6_xkbo6")
+
+[node name="mushroom6" type="Sprite2D" parent="mushrooms"]
+position = Vector2(233, 325)
+scale = Vector2(2.9375, 3)
+texture = ExtResource("6_xkbo6")
+
+[node name="mushroom7" type="Sprite2D" parent="mushrooms"]
+position = Vector2(243, 230)
+scale = Vector2(2.9375, 3)
+texture = ExtResource("6_xkbo6")
+
+[node name="mushroom8" type="Sprite2D" parent="mushrooms"]
+position = Vector2(316, 130)
+scale = Vector2(2.9375, 3)
+texture = ExtResource("6_xkbo6")
+
+[node name="mushroom9" type="Sprite2D" parent="mushrooms"]
+position = Vector2(440, 113)
+scale = Vector2(2.9375, 3)
+texture = ExtResource("6_xkbo6")
+
+[node name="mushroom10" type="Sprite2D" parent="mushrooms"]
+position = Vector2(354, 399)
+scale = Vector2(2.9375, 3)
+texture = ExtResource("6_xkbo6")
+
+[node name="mushroom11" type="Sprite2D" parent="mushrooms"]
+position = Vector2(438, 239)
+scale = Vector2(2.9375, 3)
+texture = ExtResource("6_xkbo6")
+
+[node name="olives" type="Node2D" parent="."]
+visible = false
+script = ExtResource("6_te21x")
+
+[node name="olive" type="Sprite2D" parent="olives"]
+position = Vector2(297, 202)
+scale = Vector2(3.25, 3.25)
+texture = ExtResource("8_466qb")
+
+[node name="olive2" type="Sprite2D" parent="olives"]
+position = Vector2(287, 314)
+scale = Vector2(3.25, 3.25)
+texture = ExtResource("8_466qb")
+
+[node name="olive3" type="Sprite2D" parent="olives"]
+position = Vector2(522, 349)
+scale = Vector2(3.25, 3.25)
+texture = ExtResource("8_466qb")
+
+[node name="olive4" type="Sprite2D" parent="olives"]
+position = Vector2(385, 294)
+scale = Vector2(3.25, 3.25)
+texture = ExtResource("8_466qb")
+
+[node name="olive5" type="Sprite2D" parent="olives"]
+position = Vector2(455, 177)
+scale = Vector2(3.25, 3.25)
+texture = ExtResource("10_bs7uf")
+
+[node name="olive6" type="Sprite2D" parent="olives"]
+position = Vector2(543, 249)
+scale = Vector2(3.25, 3.25)
+texture = ExtResource("10_bs7uf")
+
+[node name="olive7" type="Sprite2D" parent="olives"]
+position = Vector2(445, 419)
+scale = Vector2(3.25, 3.25)
+texture = ExtResource("10_bs7uf")
+
+[node name="olive8" type="Sprite2D" parent="olives"]
+position = Vector2(301, 423)
+scale = Vector2(3.25, 3.25)
+texture = ExtResource("10_bs7uf")
+
+[node name="olive9" type="Sprite2D" parent="olives"]
+position = Vector2(454, 323)
+scale = Vector2(3.25, 3.25)
+texture = ExtResource("10_bs7uf")
+
+[node name="salans" type="Node2D" parent="."]
+visible = false
+script = ExtResource("10_ou7h0")
+
+[node name="salam" type="Sprite2D" parent="salans"]
+position = Vector2(318, 266)
+scale = Vector2(2.3125, 2.6875)
+texture = ExtResource("10_5mibm")
+
+[node name="salam2" type="Sprite2D" parent="salans"]
+position = Vector2(379, 199)
+scale = Vector2(2.3125, 2.6875)
+texture = ExtResource("10_5mibm")
+
+[node name="salam3" type="Sprite2D" parent="salans"]
+position = Vector2(495, 261)
+scale = Vector2(2.3125, 2.6875)
+texture = ExtResource("10_5mibm")
+
+[node name="salam4" type="Sprite2D" parent="salans"]
+position = Vector2(416, 376)
+scale = Vector2(2.3125, 2.6875)
+texture = ExtResource("10_5mibm")
+
+[node name="salam5" type="Sprite2D" parent="salans"]
+position = Vector2(341, 336)
+scale = Vector2(2.3125, 2.6875)
+texture = ExtResource("10_5mibm")
+
+[node name="salam6" type="Sprite2D" parent="salans"]
+position = Vector2(485, 383)
+scale = Vector2(2.3125, 2.6875)
+texture = ExtResource("10_5mibm")
+
+[node name="salam7" type="Sprite2D" parent="salans"]
+position = Vector2(428, 290)
+scale = Vector2(2.3125, 2.6875)
+texture = ExtResource("10_5mibm")
+
+[node name="salam8" type="Sprite2D" parent="salans"]
+position = Vector2(294, 372)
+scale = Vector2(2.3125, 2.6875)
+texture = ExtResource("10_5mibm")
+
+[node name="salam9" type="Sprite2D" parent="salans"]
+position = Vector2(403, 439)
+scale = Vector2(2.3125, 2.6875)
+texture = ExtResource("10_5mibm")
+
+[node name="salam10" type="Sprite2D" parent="salans"]
+position = Vector2(489, 189)
+scale = Vector2(2.3125, 2.6875)
+texture = ExtResource("10_5mibm")
+
+[node name="BtnTomato" type="Button" parent="."]
+offset_left = 510.0
+offset_top = 537.0
+offset_right = 739.0
+offset_bottom = 766.0
+scale = Vector2(0.4375, 0.414062)
+icon = ExtResource("6_dp4ac")
+expand_icon = true
+
+[node name="BtnCheese" type="Button" parent="."]
+offset_left = 643.0
+offset_top = 541.0
+offset_right = 868.0
+offset_bottom = 766.0
+scale = Vector2(0.421875, 0.421875)
+icon = ExtResource("5_vooi0")
+expand_icon = true
+
+[node name="BtnMushroom" type="Button" parent="."]
+offset_left = 868.0
+offset_top = 546.0
+offset_right = 973.0
+offset_bottom = 639.0
+icon = ExtResource("6_xkbo6")
+expand_icon = true
+
+[node name="BtnOlives" type="Button" parent="."]
+offset_left = 758.0
+offset_top = 541.0
+offset_right = 844.0
+offset_bottom = 637.0
+icon = ExtResource("10_bs7uf")
+expand_icon = true
+
+[node name="BtnSalans" type="Button" parent="."]
+offset_left = 1007.0
+offset_top = 549.0
+offset_right = 1097.0
+offset_bottom = 641.0
+icon = ExtResource("10_5mibm")
+expand_icon = true
+
+[node name="BtnTrash" type="Button" parent="." node_paths=PackedStringArray("tomato", "cheese", "mushrooms", "olives", "salans")]
+visible = false
+offset_left = 29.0
+offset_top = 520.0
+offset_right = 118.0
+offset_bottom = 622.0
+icon = ExtResource("11_h2dqm")
+expand_icon = true
+script = ExtResource("6_2phjo")
+tomato = NodePath("../TomatoSouce")
+cheese = NodePath("../cheese")
+mushrooms = NodePath("../mushrooms")
+olives = NodePath("../olives")
+salans = NodePath("../salans")
+
+[node name="BtnSell" type="Button" parent="."]
+offset_left = 1201.0
+offset_top = 523.0
+offset_right = 1394.0
+offset_bottom = 633.0
+theme_override_fonts/font = ExtResource("17_ncui0")
+theme_override_font_sizes/font_size = 50
+text = "Vender"
+script = ExtResource("17_mjj3y")
+
+[node name="LblMoney" type="Label" parent="."]
+offset_left = 1102.0
+offset_top = -6.0
+offset_right = 1458.0
+offset_bottom = 96.0
+theme_override_fonts/font = ExtResource("17_ncui0")
+theme_override_font_sizes/font_size = 70
+text = "R$ 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TxtRecepe" type="TextEdit" parent="."]
+offset_left = 1156.0
+offset_top = 105.0
+offset_right = 1418.0
+offset_bottom = 489.0
+theme_override_fonts/font = ExtResource("17_ncui0")
+theme_override_font_sizes/font_size = 25
+text = "Tomate"
+editable = false
+
+[node name="TmrTime" type="Timer" parent="."]
+wait_time = 60.0
+one_shot = true
+
+[node name="LblTarget" type="Label" parent="."]
+offset_left = 157.0
+offset_top = 545.0
+offset_right = 405.0
+offset_bottom = 647.0
+theme_override_fonts/font = ExtResource("17_ncui0")
+theme_override_font_sizes/font_size = 50
+text = "Meta: 0"
+
+[node name="LblTime" type="Label" parent="."]
+offset_left = 31.0
+offset_top = 33.0
+offset_right = 199.0
+offset_bottom = 94.0
+theme_override_fonts/font = ExtResource("17_ncui0")
+theme_override_font_sizes/font_size = 70
+text = "0:00"
+
+[node name="LosePopup" type="Node2D" parent="."]
+visible = false
+position = Vector2(37, 69)
+
+[node name="Panel" type="Panel" parent="LosePopup"]
+offset_left = -66.0
+offset_top = -81.0
+offset_right = 1791.0
+offset_bottom = 672.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_l16bo")
+
+[node name="LblLose" type="Label" parent="LosePopup/Panel"]
+layout_mode = 0
+offset_left = 483.0
+offset_top = 64.0
+offset_right = 1063.0
+offset_bottom = 208.0
+theme_override_fonts/font = ExtResource("17_ncui0")
+theme_override_font_sizes/font_size = 100
+text = "Você Perdeu"
+
+[node name="BtnRestart" type="Button" parent="LosePopup/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -439.5
+offset_top = -51.5
+offset_right = 91.5
+offset_bottom = 100.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("17_ncui0")
+theme_override_font_sizes/font_size = 100
+text = "Recomeçar"
+
+[node name="WinPopup" type="Node2D" parent="."]
+visible = false
+
+[node name="Panel" type="Panel" parent="WinPopup"]
+offset_left = -24.0
+offset_top = -22.0
+offset_right = 1746.0
+offset_bottom = 783.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lucak")
+
+[node name="LblCongrats" type="Label" parent="WinPopup/Panel"]
+layout_mode = 0
+offset_left = 439.0
+offset_top = 132.0
+offset_right = 1213.0
+offset_bottom = 276.0
+theme_override_colors/font_color = Color(0.913725, 0.827451, 0.203922, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("17_ncui0")
+theme_override_font_sizes/font_size = 100
+text = "Batemos a Meta!"
+
+[node name="BtnNext" type="Button" parent="WinPopup/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -288.0
+offset_top = -55.0
+offset_right = 178.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("17_ncui0")
+theme_override_font_sizes/font_size = 70
+text = "Proxima Meta"
+
+[connection signal="pressed" from="BtnTomato" to="TomatoSouce" method="_on_btn_tomato_pressed"]
+[connection signal="pressed" from="BtnCheese" to="cheese" method="_on_btn_cheese_pressed"]
+[connection signal="pressed" from="BtnMushroom" to="mushrooms" method="_on_btn_mushroom_pressed"]
+[connection signal="pressed" from="BtnOlives" to="olives" method="_on_btn_olives_pressed"]
+[connection signal="pressed" from="BtnSalans" to="salans" method="_on_btn_salans_pressed"]
+[connection signal="pressed" from="BtnTrash" to="BtnTrash" method="_on_pressed"]
+[connection signal="pressed" from="BtnSell" to="BtnSell" method="_on_pressed"]
+[connection signal="timeout" from="TmrTime" to="." method="_on_tmr_time_timeout"]
+[connection signal="pressed" from="LosePopup/Panel/BtnRestart" to="." method="_on_btn_restart_pressed"]
+[connection signal="pressed" from="WinPopup/Panel/BtnNext" to="." method="_on_btn_next_pressed"]
